@@ -8,10 +8,6 @@ button.addEventListener('click', function () {
 
    });
 
-
-
-
-
 const tabHeaders = document.querySelectorAll('[data-tab]');
 
 tabHeaders.forEach(function(item) {
@@ -20,5 +16,21 @@ tabHeaders.forEach(function(item) {
      contentBox.classList.toggle('hidden');
    })
 });
+
+/* для модалок табы start  разобраться 
+const modalButtons = document.querySelectorAll('[data-modal-button]');
+
+modalButtons.forEach(function (item) {
+   item.addEventListener('click', function() { 
+      const modalId = this.dataset.modalButton;
+
+
+      const modal = document.querySelector('#' + modalId);
+      console.log(modal);
+      modal.classList.remove('visible');
+    })
+})
+*/
+
 
 
